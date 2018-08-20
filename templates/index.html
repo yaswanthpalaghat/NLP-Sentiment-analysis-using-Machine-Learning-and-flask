@@ -18,9 +18,13 @@
 			margin-left: -30px;
 			border-radius: 50%;
 			border:6px solid transparent;
-			border-top-color: #0091EA;
+			border-top-color: blue;
 			animation: spinner 0.7s linear infinite;
 		}
+                 .jumbotron text-center{
+                  background-color:blue;
+                  text-color:white;
+                   }
 		@keyframes spinner {
 			to {
 				transform: rotate(360deg);
@@ -28,14 +32,14 @@
 
 		}
 		li { background-color:#BDBDBD; }
-		li:nth-child(odd) { background-color:#0091EA; }
+		li:nth-child(odd) { background-color:green; }
 		</style>
 
 
 <div class="container">
 	<div class="jumbotron text-center">
-		<h3>Natural Language Processing App</h3>
-		<p>Understanding Everyday Language</p>
+		<h3><b>Natural Language Processing App by Yaswanth<b></h3>
+		<p>Evaluating Everyday Language</p>
 	</div>
 </div>
 
@@ -43,8 +47,8 @@
 	<form method="POST" action="{{ url_for('analyse')}}" id="myForm">
 		
 
-		<label >Enter Your Text Below</label>
-    <textarea class="form-control" rows="3" cols="2" name="rawtext"></textarea>
+		<label ><strong>Enter Your Text Below<strong></label><br>
+    <textarea class="form-control" rows="20" cols="40" name="rawtext"></textarea><br>
 
     <input type="submit" onclick="myAnalyser()" value="Submit" class="btn btn-primary ">
     <input type="button" onclick="myFunction()" value="Clear" class="btn btn-outline-dark">
